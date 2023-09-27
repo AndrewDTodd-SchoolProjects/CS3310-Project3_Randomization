@@ -1,4 +1,4 @@
-# Project2_MergeSortInversionCounter
+# Project3_Randomization
 
 Steps to build
 prolog: though this step isn't strictly necessary to actually build the project it helps to make sure the user is in the right directory and all necessary configuration files have been downloaded correctly
@@ -44,22 +44,22 @@ Step 1:
  Step 3:
    the built executables can now be run
 
-   To run the BruteForce program
+   To run the QuickSort program
     
       on windows
-        .\BruteForce.exe <optional file-path> (file-path is to a file with new line deliminated list of integers, such as the provided FewNum.txt or LotsOfNum.txt - .\BruteForce.exe ../../LotsOfNum.txt)
+        .\QuickSort.exe <optional file-path> <optional itteration count> (file-path is to a file with new line deliminated list of integers, such as the provided FewNum.txt or LotsOfNum.txt - .\QuickSort.exe ../../LotsOfNum.txt)
 
       on linux
-        ./BruteForce <optional file-path> (same as on windows for file-path option)
+        ./QuickSort <optional file-path> <optional itteration count> (same as on windows for file-path option)
 
-   To run the MergeSortCount program
+   To run the RSelect program
     
       on windows
-        .\MergeSortCount.exe <optional file-path> (file-path is to a file with new line deliminated list of integers, such as the provided FewNum.txt or LotsOfNum.txt - ./BruteForce.exe ../../LotsOfNum.txt)
+        .\RSelect.exe <optional file-path> <optional target rank> <optional itteration count> (file-path is to a file with new line deliminated list of integers, such as the provided FewNum.txt or LotsOfNum.txt - ./QuickSort.exe ../../LotsOfNum.txt)
 
       on linux
-        ./MergeSortCount <optional file-path> (same as on windows for file-path option)
+        ./RSelect <optional file-path> <optional target rank> <optional itteration count> (same as on windows for file-path option)
 
-  Upon completion the program will report how long the executed method took in execution as well as the number of inversions counted
+  Upon completion the program will report how long the executed method took in execution as well as the number of comparisons counted for the given method of pivot selection
 
   ** When the program is not supplied with a file to read from it will generate an array of random integers (pre configured in the Project2_InversionsCountConstDeff.h file - ARRAY_SIZE variable - to 100,000) and operate on that
